@@ -1,8 +1,6 @@
 use <utility.scad>;
 $fn = 120;
 
-tol = 0.4;
-tir = 4.2;
 diceDiameter = 25;
 diceRadius = diceDiameter / 2;
 diceDistance = diceDiameter + 1.2;
