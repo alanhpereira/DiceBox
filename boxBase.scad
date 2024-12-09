@@ -24,7 +24,7 @@ module boxBase() {
 		tz(baseThickness + diceDiameter / 2) gridPlacement()
 		    sphere(r = diceRadius);
 		tz(baseThickness + diceDiameter / 2) lidMagnetPlacement()
-		    cylinder(d = 3, h = 2.5, center = true);
+		    cylinder(d = 3 + tol, h = 2.5, center = true);
 	}
 }
 boxBase();
