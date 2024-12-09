@@ -16,7 +16,11 @@ module lidMagnetPlacement() {
 	}
 }
 
-lidMagnetPlacement() {
-	cylinder(d = 3, h = 1);
-	cylinder(d = 6, h = 5);
+module baseMagnetPlacement() {
+	mx() my() {
+		diag = diceDistance * 3 + sqrt(2) / 2 * (25 / 2 + 1.2 + 3 + tol / 2);
+		txy(diag, diag) children();
+	}
 }
+
+baseMagnetPlacement() { cylinder(d = 6, h = 5); }
