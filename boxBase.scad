@@ -1,9 +1,10 @@
 use <utility.scad>;
 use <dicePlacement.scad>
+use <magnetPlacement.scad>
 $fn = 120;
 
 tol = 0.4;
-wallThickness = 2;
+wallThickness = 3.2;
 baseThickness = 2;
 diceDiameter = 25;
 diceSpacing = 1.2;
@@ -22,6 +23,8 @@ module boxBase() {
 		         center = true);
 		tz(baseThickness + diceDiameter / 2) gridPlacement()
 		    sphere(r = diceRadius);
+		tz(baseThickness + diceDiameter / 2) lidMagnetPlacement()
+		    cylinder(d = 3, h = 2.5, center = true);
 	}
 }
 boxBase();
