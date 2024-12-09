@@ -2,8 +2,9 @@ use <utility.scad>;
 $fn = 120;
 
 diceDiameter = 25;
+diceSpacing = 1.2;
 diceRadius = diceDiameter / 2;
-diceDistance = diceDiameter + 1.2;
+diceDistance = diceDiameter + diceSpacing;
 
 module hexagonalPlacement() {
 	h = sqrt(3) / 2 * diceDistance;
