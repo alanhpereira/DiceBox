@@ -3,7 +3,7 @@ use <dicePlacement.scad>
 $fn = 120;
 
 tol = 0.4;
-wallThickness = 2;
+wallThickness = 3.2;
 baseThickness = 2;
 diceDiameter = 25;
 diceSpacing = 1.2;
