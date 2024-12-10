@@ -38,6 +38,9 @@ module boxBase() {
 			tz(-0.8) cylinder(d = 3, h = 2);
 			tz(-0.8) cylinder(d = 6, h = 6);
 		}
+		baseMagnetPlacement() {
+			tz(diceDiameter + 2 * baseThickness - 6) cylinder(d = 6, h = 7);
+		}
 	}
 }
 boxBase();
