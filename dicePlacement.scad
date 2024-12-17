@@ -1,7 +1,8 @@
 use <utility.scad>;
 $fn = 120;
 
-diceDiameter = 25;
+diceDiameter = 23;
+diceHeight = 20;
 diceSpacing = 1.2;
 diceRadius = diceDiameter / 2;
 diceDistance = diceDiameter + diceSpacing;
