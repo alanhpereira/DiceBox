@@ -33,13 +33,13 @@ module boxBase() {
 		}
 
 		tz(baseThickness + diceHeight / 2) lidMagnetPlacement() {
-			tz(0.4) cylinder(d = 6 + tol, h = 5.2);
+			tz(0.4) cylinder(d = 6 + tol, h = 5);
 		}
 		tz(baseThickness + diceHeight / 2) indexingPlacement()
 		    sphere(d = indexDiameter + tol * 2);
 		baseMagnetPlacement() {
-			tz(diceHeight + 2 * baseThickness - 5.6)
-			    cylinder(d = 6 + tol, h = 5.2);
+			tz(diceHeight + 2 * baseThickness - 5.4)
+			    cylinder(d = 6 + tol, h = 5);
 		}
 	}
 }
