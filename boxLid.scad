@@ -15,7 +15,7 @@ diceRadius = diceDiameter / 2;
 diceDistance = diceDiameter + diceSpacing;
 
 module boxBase() {
-	side = diceDistance * 7 - diceSpacing + wallThickness * 2;
+	side = diceDistance * 2 - diceSpacing + wallThickness * 2;
 	difference() {
 		tz((baseThickness + diceHeight / 2))
 		    linear_extrude(height = baseThickness + diceHeight / 2) {

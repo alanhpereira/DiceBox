@@ -21,7 +21,7 @@ module hexagonalPlacement() {
 }
 
 module gridPlacement() {
-	for (i = [-3:3], j = [-3:3])
+	for (i = [-0.5:0.5], j = [-0.5:0.5])
 		txy(diceDistance * i, diceDistance * j) children();
 }
 
